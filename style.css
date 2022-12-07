@@ -130,13 +130,11 @@ h2 {
 }
 
 .desktop {
-    visibility: hidden;
-    position: absolute;
+    display: none;
 }
 
 footer {
-    visibility: hidden;
-    position: absolute;
+    display: none;
 
     font-family: 'Open Sans', sans-serif;
     font-size: 1.4rem;
@@ -174,24 +172,13 @@ span {
 }
 
 @media (min-width: 700px) {
-    .images div:nth-child(5) {
-
-        visibility: hidden;
-        position: absolute;
-    }
-
-    .images div:nth-child(6) {
-        visibility: hidden;
-        position: absolute;
-    }
-
     .page {
         display: flex;
         height:100%;
     }
 
     header {
-        max-width: 40rem;
+        max-width: 35rem;
     }
 
     header h1 {
@@ -203,12 +190,12 @@ span {
         background-color: transparent;
         color: white;
         width: 75%;
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     main {
         width: 90%;
-        padding: 6.4rem 3.2rem 0;
+        padding: 4.4rem 3.2rem 0;
 
         display: flex;
         align-items: center;
@@ -217,7 +204,7 @@ span {
     }
 
     .images {
-        width: 90%;
+        width: 85%;
 
         display: grid;
         gap: 2rem;
@@ -245,10 +232,9 @@ span {
     }
 
     footer {
-        visibility: visible;
-        position: relative;
-        margin-top: 3rem;
-        bottom: 10px;
+        display: block;
+
+        margin-top: 1.5rem;
 
         display: flex;
         align-items: center;
@@ -258,6 +244,10 @@ span {
 }
 
 @media (min-width: 1300px) {  
+
+    header {
+        max-width: 40rem;
+    }
 
     header p {
         background-color: transparent;
@@ -297,14 +287,18 @@ span {
 
     .images div:nth-child(5) {
         grid-area: E;
-        visibility: visible;
-        position: relative;
+        display: block;
     }
 
     .images div:nth-child(6) {
         grid-area: F;
-        visibility: visible;
-        position: relative;
+        display: block;
+    }
+    h2 {
+        visibility: hidden;
+    }
+    footer {
+        margin-top: 3rem;
     }
 }
  
