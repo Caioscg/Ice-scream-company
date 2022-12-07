@@ -1,4 +1,4 @@
-<h1 align="center"> Advevnced CSS layout</h1>
+<h1 align="center"> Space Cream</h1>
 
 <p align="center">
 A basic development of a responsiveness and animated css layout website.
